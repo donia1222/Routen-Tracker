@@ -1,0 +1,309 @@
+html, body, #map {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+}
+#stats {
+  margin-top: 10px;
+}
+.distance-time-box {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.distance {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.route {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #3f403f;
+}
+
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  td {
+    text-align: center;
+    border-bottom: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Distanz";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Zeit";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Datum";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Kalorien";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Routenansicht";
+  }
+   #map {
+        height: 100%;
+        width: 100%;
+      }
+      #stats {
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
+      #controls {
+        margin-top: 10px;
+      }
+      #history {
+        margin-top: 10px;
+        border-top: 0px solid #ddd;
+        padding-top: 10px;
+      }
+      #history ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      #history li {
+        margin-bottom: 10px;
+      }
+html {
+    background-color: black;
+}
+
+
+#history li {
+    margin-bottom: 10px;
+    font-family: 'Alata';
+}
+
+button#clear-history-btn {
+    background-color: #ffffff00;
+    color: #e57575;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Alata';
+}
+h2 {
+    font-family: 'Alata';
+    color: #424543;
+    font-size: 21px;
+}
+#history li {
+    margin-bottom: 10px;
+    font-family: 'Alata';
+    text-align: center;
+   font-size: 18px;
+}
+a {
+    color: #009688;
+    margin-left: 10px;
+}
+.stop-button {
+    background-color: #ff000000;
+    color: #ef6262;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.stop-button:hover {
+    background-color: #ff000000;
+    color: #797879;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+button {
+    background-color: #00968800;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+   font-weight: bold;
+
+}
+th {
+    font-family: 'Alata';
+    font-size: 18px;
+}
+td {
+    font-family: 'Alata';
+    font-size: 15px;
+    color: #e1e1e1;
+}
+button#historyButton {
+    background-color: #00968800;
+    color: #bfc4c5;
+    font-family: 'Alata';
+   font-size: 16px;
+
+}
+
+#stats {
+    font-family: 'Alata';
+    font-size: 18px;
+    text-align: center;
+    background-color: #696969;
+    color: #e0e0e0;
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+#controls {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: #4e4e4e;
+    padding: 10px;
+    left: 0;
+    display: flex;
+}
+.notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #009688;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Alata';
+}
+
+.notification .distance {
+  font-size: 32px;
+  font-family: 'Alata';
+}
+
+.notification .time {
+  font-size: 24px;
+  font-family: 'Alata';
+}
+button#pause-btn {
+    color: #c856db;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+button#pause-btn:hover {
+    color: #797879;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+button.start-button {
+    font-size: 26px;
+    background-color: #454444;
+    font-weight: bold;
+
+ }
+button.start-button:hover {
+    font-size: 26px;
+    background-color: #454444;
+    font-weight: bold;
+    color: #797879;
+
+ }
+body {
+  overflow-x: hidden;
+}
+
+th {
+    font-family: 'Alata';
+    font-size: 18px;
+    display: none;
+ }
+tr:not(:first-child) {
+  border-top: 1px solid #b2b2b2;
+}
+}

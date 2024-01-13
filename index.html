@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>meine Spaziergänge</title>
+  <link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="stats"></div>
+    <div id="controls">
+      <button onclick="startRide()" class="start-button">Go</button>
+      <button id="pause-btn" onclick="togglePauseRide()">Pause</button>
+     <button onclick="stopRide()" class="stop-button">Stop</button>
+     <button id="historyButton" onclick="scrollToHistory()">Verlauf</button>
+    </div>
+   <div id="history-container">
+  <h2></h2>
+  <div id="history">
+      <ol>
+     </ol>
+    </div>
+   </div>
+<script>
+function clearHistory() {
+  localStorage.removeItem("history");
+  updateHistory();
+}
+
+window.onload = function() {
+  initMap();
+  loadRoutes();
+  updateHistory();
+
+  // Agregar evento onclick al botón de borrar historial
+  var clearHistoryBtn = document.getElementById("clear-history-btn");
+  clearHistoryBtn.onclick = clearHistory;
+};
+
+</script>
+  </body>
+</html>
