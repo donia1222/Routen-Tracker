@@ -40,4 +40,4 @@ Contributions
 
 Contributions to this project are welcome. If you have suggestions for improving the application or adding new features, please feel free to create an issue or send a pull request
 
-![Project screenshot](https://path/to/your/repository/images/screenshot.png)
+![Project screenshot](https://app.hundezonen.ch/docs/IMG_0094.PNG)
