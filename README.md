@@ -23,6 +23,8 @@ During the ride, the application records the distance, time, and calculates the 
 Upon completion, the user can save the route, which is added to the history.
 Installation and Use
 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY"></script>
+
 To use Google Maps in this application, you will need to obtain a Google API key. Follow these steps:
 
 Visit Google Cloud Platform and create or sign in to your account.
